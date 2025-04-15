@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Light blue for Trip */
+}
+
+h1 {
+  color: #6a3291;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #6a3291;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #6a3291;
+  color: #ffffff; /* Your yellow button text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #b3d4ff;
+  color: #ffcc00;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #ee3c8f;
+  color: #ffffff;
+}
+
+.result {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333333; /* Dark gray background for contrast */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  color: #ffffff; /* White text for all children */
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.details li {
+  margin: 10px 0;
+  color: #ffffff; /* White text */
+}
+
+.pdf-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pdf-item {
+  flex: 1;
+  text-align: center;
+  color: #ffffff; /* White for "No [X] Available" */
+}
+
+.pdf-item a {
+  color: #ffffff; /* White links */
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.pdf-item a:hover {
+  color: #cccccc; /* Light gray on hover */
+  text-decoration: underline;
+}
+
+.pdf-preview {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  border: 1px solid #ffffff; /* White border to match */
+  margin-bottom: 10px;
+}
+
+.dist-link {
+  color: #ee3c8f; /* White link */
+  text-decoration: underline;
+  display: block;
+  margin-top: 5px;
+}
+
+.dist-link:hover {
+  color: #cccccc; /* Light gray on hover */
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 180px;
+  }
+}
