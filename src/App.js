@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src="/trip-logo.jpg" alt="Trip Logo" className="logo" />
+      <img src="/Trip-Logo.jpg" alt="Trip Logo" className="logo" />
       <h1>Trip Testing Lookup</h1>
       <div className="search-container">
         <input
