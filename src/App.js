@@ -40,6 +40,11 @@ function App() {
     <div className="App">
       <img src="/Trip-Logo.jpg" alt="Trip Logo" className="logo" />
       <h1>Trip Testing Lookup</h1>
+{/* Warning Banner - Top of Page */}
+      <div className="warning-banner">
+        <strong>⚠️ Important Warning:</strong><br />
+        Using marijuana during pregnancy could cause birth defects or other health issues to your unborn child.
+      </div>
       <div className="search-container">
         <input
           type="text"
@@ -102,6 +107,21 @@ function App() {
                     </>
                   )}
                   {!result['PDF2'] && <p>No Test Results Available</p>}
+                </div>
+                <div className="pdf-item">
+                  {result['PDF3'] && (
+                    <>
+                      <img
+                        src={result['PDF3'][0].thumbnails?.large?.url || result['PDF3'][0].url}
+                        alt="Additional Results Preview"
+                        className="pdf-preview"
+                      />
+                      <a href={result['PDF3'][0].url} target="_blank" rel="noopener noreferrer">
+                        View Additional Results
+                      </a>
+                    </>
+                  )}
+                  {!result['PDF3'] && <p>No Additional Results Available</p>}
                 </div>
               </div>
             </>
