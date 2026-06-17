@@ -6,10 +6,12 @@ function App() {
   const [query, setQuery] = useState('');
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+ 
+ // Environment variables - these come from Vercel settings
+  const API_KEY = process.env.REACT_APP_AIRTABLE_API_KEY;
+  const BASE_ID = process.env.REACT_APP_AIRTABLE_BASE_ID || 'appjM0331R2gxUPeC';
+  const TABLE_NAME = process.env.REACT_APP_AIRTABLE_TABLE_NAME || 'tbljveyyXwa2YDhsr';
 
-  const API_KEY = 'patEimoMULapKUkwS.d52f3f7434b13efd1bbae793bf84590976d31529c1f561fa40f7c5cd56d2eeb8'; // Company 1 API key
-  const BASE_ID = 'appjM0331R2gxUPeC'; // Company 1 base ID
-  const TABLE_NAME = 'tbljveyyXwa2YDhsr'; // Company 1 table name
 
   const handleSearch = async () => {
     setLoading(true);
