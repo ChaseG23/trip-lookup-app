@@ -40,13 +40,20 @@ function App() {
 
   return (
     <div className="App">
-      <img src="/Trip-Logo.jpg" alt="Trip Logo" className="logo" />
+      <img src="/TRIP-testing-logo.jpg" alt="Trip Logo" className="logo" />
       <h1>Trip Testing Lookup</h1>
 {/* Warning Banner - Top of Page */}
-      <div className="warning-banner">
-        <strong>⚠️ Important Warning:</strong><br />
-        Using marijuana during pregnancy could cause birth defects or other health issues to your unborn child.
-      </div>
+<div className="warning-banner">
+  <p>
+    <strong>⚠️ Important Warning:</strong><br />
+    Using marijuana during pregnancy could cause birth defects or other health issues to your unborn child.
+  </p>
+
+  <p>
+    <strong>ARIZONA DEPARTMENT OF HEALTH SERVICES' WARNING:</strong><br />
+    Marijuana use can be addictive and can impair an individual's ability to drive a motor vehicle or operate heavy machinery. Marijuana smoke contains carcinogens and can lead to an increased risk for cancer, tachycardia, hypertension, heart attack, and lung infection. KEEP OUT OF REACH OF CHILDREN
+  </p>
+</div>
       <div className="search-container">
         <input
           type="text"
